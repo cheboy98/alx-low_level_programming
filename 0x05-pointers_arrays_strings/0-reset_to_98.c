@@ -2,6 +2,7 @@
 
 /**
  * main - update the value of a variable in another function
+ * @n: value to be changed
  *
  * Return: n
  */
