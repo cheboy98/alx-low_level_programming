@@ -3,16 +3,11 @@
 /**
  * main - update the value of a variable in another function
  *
- * Return: always 0
+ * Return: n
  */
 
-int main(void)
+void reset_to_98(int *n)
 {
-	int n;
-	int *p;
-
-	p = &n;
-	reset_to_98(p);
-
-	return (0);
+	*n = 98;
 }
+
