@@ -49,9 +49,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		str[s1_length + i] = s2[i];
 	}
 
-	if (n >= s2_length)
+	if (n >= s2_length && i < s1_length + s2_length)
 	{
-		for (i = 0; i < s2_length; i++)
+		for (i = 0; i < s2_length + s2_length; i++)
 		{
 			str[s1_length + i] = s2[i];
 		}
