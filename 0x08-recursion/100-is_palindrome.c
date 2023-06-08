@@ -13,6 +13,7 @@ int helper_is_palindrome(char *s, int start, int end);
 int is_palindrome(char *s)
 {
 	int length = strlen(s);
+
 	if (length == 0 || length == 1)
 		return (1);
 	return (helper_is_palindrome(s, 0, length - 1));
@@ -20,6 +21,7 @@ int is_palindrome(char *s)
 
 /**
  * helper_is_palindrome - helper function
+ * @s: string
  * @start: start of string
  * @end: end of string
  *
