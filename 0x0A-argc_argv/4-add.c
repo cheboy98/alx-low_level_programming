@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 		}
 		i++;
 	}
-	
+
 	printf("%d\n", result);
 
 	return (0);
@@ -40,9 +40,9 @@ int main(int argc, char **argv)
 
 /**
  * check_if_digit - check if arguments are digit
- * @arg: arguments
+ * @s: string
  *
- * Return 1 if arg is integer 0 if not
+ * Return: 1 if s is integer 0 if not
  */
 
 int check_if_digit(char *s)
