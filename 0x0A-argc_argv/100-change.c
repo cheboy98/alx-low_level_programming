@@ -11,8 +11,9 @@
 
 int main(int argc, char **argv)
 {
-	int i, number, result = 0;
-	int cents[] = {25, 10, 5, 2, 1};
+	long unsigned int i;
+	int number, result = 0;
+	int coins[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
@@ -28,12 +29,12 @@ int main(int argc, char **argv)
 		return (0);
 	}
 
-	for (i = 0; i < sizeof(cents) && number >= 0; i++)
+	for (i = 0; i < sizeof(coins) && number >= 0; i++)
 	{
-		while (number >= *(cents + i))
+		while (number >= *(coins + i))
 		{
 			result++;
-			number -= *(cents + i);
+			number -= *(coins + i);
 		}
 	}
 
