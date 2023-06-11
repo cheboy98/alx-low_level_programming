@@ -12,7 +12,7 @@
 int main(int argc, char **argv)
 {
 	int i, number, result = 0;
-	int cents = {25, 10 5, 2, 1};
+	int cents[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
@@ -23,17 +23,20 @@ int main(int argc, char **argv)
 	number = atoi(*(argv + 1));
 
 	if (number < 0)
-		printf("0\n");
-
-	for (i = 0; j < sizeof(cents); j++)
 	{
-		while (number <= cents[i])
+		printf("0\n");
+		return (0);
+	}
+
+	for (i = 0; i < sizeof(cents) && number >= 0; i++)
+	{
+		while (number >= *(cents + i))
 		{
-			result += 1;
-			number -= cents[i];
+			result++;
+			number -= *(cents + i);
 		}
 	}
 
-	printf("%i", result);
+	printf("%d\n", result);
 	return (0);
 }
