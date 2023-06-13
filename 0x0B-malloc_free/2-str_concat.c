@@ -20,8 +20,10 @@ char *str_concat(char *s1, char *s2)
 	s2_length = strlen(s2);
 	size = s1_length + s2_length + 1;
 
-	if (s1 == NULL && s2 == NULL)
-		return (NULL);
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
 	array = malloc(sizeof(char) * size);
 
