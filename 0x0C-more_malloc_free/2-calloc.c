@@ -14,9 +14,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	int *array;
 	unsigned int i, length;
 
+	length = nmemb * size;
+
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	length = nmemb * size;
 
 	array = malloc(sizeof(size) * nmemb);
 
