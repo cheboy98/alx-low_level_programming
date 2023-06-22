@@ -39,7 +39,7 @@ int main(int argc, char **argv)
  * Return: Nothing
  */
 
-void print_opcodes(char *s, bytes)
+void print_opcodes(char *s, int bytes)
 {
 	int i;
 
