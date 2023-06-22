@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void print_opcodes(char *s, int bytes);
 /**
  * main - print the opcodes of the main function
  * @argc: store the number of bytes to print
